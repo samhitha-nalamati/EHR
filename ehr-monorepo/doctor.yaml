@@ -1,0 +1,4 @@
+scheme: ed25519
+private_key: "0x9e8694f259037492c69056d0edf3f68c4e179332878de8b72bd725cd5c5724cb"  # paste from your raw hex
+public_key: ""              # leave blank or fill later
+account_address: ""         # leave blank or fill later

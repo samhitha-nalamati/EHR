@@ -1,0 +1,9 @@
+[package]
+name = "ehr"
+version = "0.0.1"
+
+[dependencies]
+AptosFramework = { git = "https://github.com/aptos-labs/aptos-core.git", subdir = "aptos-move/framework/aptos-framework", rev = "main" }
+
+[addresses]
+ehr = "0x88fb2ad2998137a84015be34d875d9b02d0cf0c3f1180962ffb4dc15290f1ba7"

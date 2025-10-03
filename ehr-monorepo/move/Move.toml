@@ -1,0 +1,13 @@
+[package]
+name = "ehr"
+version = "0.1.0"
+authors = ["Your Name <you@example.com>"]
+license = "Apache-2.0"
+
+[addresses]
+MOVE_ADDRESS = "88fb2ad2998137a84015be34d875d9b02d0cf0c3f1180962ffb4dc15290f1ba7"
+
+[dependencies]
+AptosFramework = { git = "https://github.com/aptos-labs/aptos-core.git", subdir = "aptos-move/framework/aptos-framework", rev = "main" }
+MoveStdlib     = { git = "https://github.com/aptos-labs/aptos-core.git", subdir = "aptos-move/framework/move-stdlib", rev = "main" }
+AptosStdlib    = { git = "https://github.com/aptos-labs/aptos-core.git", subdir = "aptos-move/framework/aptos-stdlib", rev = "main" }

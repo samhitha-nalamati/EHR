@@ -1,0 +1,212 @@
+﻿{
+    "bytecode": "0xa11ceb0b0700000a0a01000402040c03104805581c07748a0208fe024010be031f0add031e0cfb03e4010ddf05080000010a000108000003080000050800000900010001010b02030001000c05010001000d03070001000e03080001000f0308000100100308000100110501000100120501000100130001000100140001000100150001000102060c030001060c0105010303060c050a02010a02010a03010a0a020365687206446f63746f72026964034c61620872657175657374730750617469656e740d707265736372697074696f6e730b6c61625f7265706f7274730562696c6c73086164645f62696c6c067369676e65720a616464726573735f6f661a646f63746f725f75706c6f61645f707265736372697074696f6e096765745f62696c6c730f6765745f6c61625f7265706f727473106765745f6c61625f7265717565737473116765745f707265736372697074696f6e73116c61625f75706c6f61645f7265706f72741370617469656e745f73656e645f746f5f6c61620f72656769737465725f646f63746f720c72656769737465725f6c61621072656769737465725f70617469656e7488fb2ad2998137a84015be34d875d9b02d0cf0c3f1180962ffb4dc15290f1ba7000000000000000000000000000000000000000000000000000000000000000114636f6d70696c6174696f6e5f6d65746164617461090003322e3003322e3100020102030102020203040a0a020202040203060a0a02070a0a02080a03000100010201070b0011012a020f000b01440402020100010201080b012a020b00010f010b02440602030100010201050b002b0210001402040100010201050b002b0210021402050100010101050b002b0110031402060100010201050b002b0210011402070100010201080b012a020b00010f020b02440602080100010101080b012a010b00010f030b024406020901000001050b000b0112002d00020a01000001060b000b014006000000000000000012012d01020b01000001080b000b0140060000000000000000400600000000000000004004000000000000000012022d0202020302010202010100",
+    "abi": {
+        "address": "0x88fb2ad2998137a84015be34d875d9b02d0cf0c3f1180962ffb4dc15290f1ba7",
+        "name": "ehr",
+        "friends": [],
+        "exposed_functions": [
+            {
+                "name": "add_bill",
+                "visibility": "public",
+                "is_entry": true,
+                "is_view": false,
+                "generic_type_params": [],
+                "params": [
+                    "&signer",
+                    "u64"
+                ],
+                "return": []
+            },
+            {
+                "name": "doctor_upload_prescription",
+                "visibility": "public",
+                "is_entry": true,
+                "is_view": false,
+                "generic_type_params": [],
+                "params": [
+                    "&signer",
+                    "address",
+                    "vector<u8>"
+                ],
+                "return": []
+            },
+            {
+                "name": "get_bills",
+                "visibility": "public",
+                "is_entry": false,
+                "is_view": false,
+                "generic_type_params": [],
+                "params": [
+                    "address"
+                ],
+                "return": [
+                    "vector<u64>"
+                ]
+            },
+            {
+                "name": "get_lab_reports",
+                "visibility": "public",
+                "is_entry": false,
+                "is_view": false,
+                "generic_type_params": [],
+                "params": [
+                    "address"
+                ],
+                "return": [
+                    "vector<vector<u8>>"
+                ]
+            },
+            {
+                "name": "get_lab_requests",
+                "visibility": "public",
+                "is_entry": false,
+                "is_view": false,
+                "generic_type_params": [],
+                "params": [
+                    "address"
+                ],
+                "return": [
+                    "vector<vector<u8>>"
+                ]
+            },
+            {
+                "name": "get_prescriptions",
+                "visibility": "public",
+                "is_entry": false,
+                "is_view": false,
+                "generic_type_params": [],
+                "params": [
+                    "address"
+                ],
+                "return": [
+                    "vector<vector<u8>>"
+                ]
+            },
+            {
+                "name": "lab_upload_report",
+                "visibility": "public",
+                "is_entry": true,
+                "is_view": false,
+                "generic_type_params": [],
+                "params": [
+                    "&signer",
+                    "address",
+                    "vector<u8>"
+                ],
+                "return": []
+            },
+            {
+                "name": "patient_send_to_lab",
+                "visibility": "public",
+                "is_entry": true,
+                "is_view": false,
+                "generic_type_params": [],
+                "params": [
+                    "&signer",
+                    "address",
+                    "vector<u8>"
+                ],
+                "return": []
+            },
+            {
+                "name": "register_doctor",
+                "visibility": "public",
+                "is_entry": false,
+                "is_view": false,
+                "generic_type_params": [],
+                "params": [
+                    "&signer",
+                    "u64"
+                ],
+                "return": []
+            },
+            {
+                "name": "register_lab",
+                "visibility": "public",
+                "is_entry": false,
+                "is_view": false,
+                "generic_type_params": [],
+                "params": [
+                    "&signer",
+                    "u64"
+                ],
+                "return": []
+            },
+            {
+                "name": "register_patient",
+                "visibility": "public",
+                "is_entry": false,
+                "is_view": false,
+                "generic_type_params": [],
+                "params": [
+                    "&signer",
+                    "u64"
+                ],
+                "return": []
+            }
+        ],
+        "structs": [
+            {
+                "name": "Doctor",
+                "is_native": false,
+                "is_event": false,
+                "abilities": [
+                    "key"
+                ],
+                "generic_type_params": [],
+                "fields": [
+                    {
+                        "name": "id",
+                        "type": "u64"
+                    }
+                ]
+            },
+            {
+                "name": "Lab",
+                "is_native": false,
+                "is_event": false,
+                "abilities": [
+                    "key"
+                ],
+                "generic_type_params": [],
+                "fields": [
+                    {
+                        "name": "id",
+                        "type": "u64"
+                    },
+                    {
+                        "name": "requests",
+                        "type": "vector<vector<u8>>"
+                    }
+                ]
+            },
+            {
+                "name": "Patient",
+                "is_native": false,
+                "is_event": false,
+                "abilities": [
+                    "key"
+                ],
+                "generic_type_params": [],
+                "fields": [
+                    {
+                        "name": "id",
+                        "type": "u64"
+                    },
+                    {
+                        "name": "prescriptions",
+                        "type": "vector<vector<u8>>"
+                    },
+                    {
+                        "name": "lab_reports",
+                        "type": "vector<vector<u8>>"
+                    },
+                    {
+                        "name": "bills",
+                        "type": "vector<u64>"
+                    }
+                ]
+            }
+        ]
+    }
+}
